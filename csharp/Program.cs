@@ -1,6 +1,6 @@
 using System;
 
-namespace csharp
+namespace MyApp
 {
   // dotnet new console
 
@@ -9,6 +9,12 @@ namespace csharp
     static void Main(string[] args)
     {
       Console.WriteLine("Hello World!");
+
+      Console.Write("Enter your 1st name: ");
+      String input = Console.ReadLine();
+
+      Console.WriteLine("You entered: " + input);
+
     }
   }
 }
