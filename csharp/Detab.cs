@@ -1,12 +1,12 @@
 using System;
 using System.IO;
 
-namespace csharp
+namespace MyApp
 {
   //
   // This class replaces tabs with spaces.
   // @author James Soper
-  // @version 1.0
+  // @version 1.1
   //
   class Detab
   {
@@ -64,7 +64,7 @@ namespace csharp
           break;
 
         default:
-          Console.WriteLine("usage: dotnet DetabNS.dll <tab_size> input_file");
+          Console.WriteLine("usage: dotnet MyApp.dll <tab_size> input_file");
           Environment.Exit(-1);
           break;
       }
@@ -121,7 +121,7 @@ namespace csharp
       {
         Console.WriteLine("Exception: " + e.Message);
       }
-      finally 
+      finally
       {
         if (streamWriter != null)
           ((IDisposable) streamWriter).Dispose();
